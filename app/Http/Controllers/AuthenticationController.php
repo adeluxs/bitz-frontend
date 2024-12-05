@@ -65,6 +65,14 @@ class AuthenticationController extends Controller
     }
 
 
+    // public function redirectToGoogle() {
+    //     Log::info('The redirectToGoogle method is called .....');
+
+    //       // Build the full API URL dynamically using the config
+    //       $apiUrl = config('api.base_url') . '/auth/google';
+    //       Log::info('Connecting to API URL: ' . $apiUrl);
+    // }
+
 
     public function login()
     {

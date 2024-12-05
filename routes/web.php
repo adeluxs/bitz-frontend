@@ -11,6 +11,7 @@ Route::get('/login', [AuthenticationController::class, 'login'])->name('user.log
 Route::post('/login', [AuthenticationController::class, 'userLoginSubmit'])->name('user.login.submit');
 Route::get('/forgot-password', [AuthenticationController::class, 'forgotPassword'])->name('user.forgot-password');
 Route::post('/logout', [AuthenticationController::class, 'logout'])->name('logout');
+Route::get('/sign-with-google', [AuthenticationController::class, 'redirectToGoogle'])->name('user.google');
 
 // user routes
 Route::get('/', [UserController::class, 'index'])->name('index');
